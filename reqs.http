@@ -1,0 +1,23 @@
+@server = http://localhost:8080
+@productos = {{server}}/api/productos
+@ventas = {{server}}/api/ventaDetalles
+###
+GET {{ventas}}
+###
+POST {{instumentos}}
+Content-Type: application/json
+
+{
+    "nombre": "Quena",
+    "categoria": "Viento",
+    "descripcion": "Tubo de madera con orificios"
+}
+###
+POST {{musicos}}
+Content-Type: application/json
+
+{"nombre": "Otro Músico"}
+###
+GET {{server}}/api/integrantes/1/instrumento
+###
+GET {{server}}/api/bandas/1/formacion
