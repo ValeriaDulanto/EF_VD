@@ -4,20 +4,20 @@
 ###
 GET {{ventas}}
 ###
-POST {{instumentos}}
+POST {{productos}}
 Content-Type: application/json
 
 {
     "nombre": "Quena",
     "categoria": "Viento",
-    "descripcion": "Tubo de madera con orificios"
+
 }
 ###
-POST {{musicos}}
+POST {{ventas}}
 Content-Type: application/json
 
-{"nombre": "Otro Músico"}
+{"nombre": "Otro Producto"}
 ###
-GET {{server}}/api/integrantes/1/instrumento
+GET {{server}}/api/productos/1/productos
 ###
-GET {{server}}/api/bandas/1/formacion
+GET {{server}}/api/ventas/1/ventas
