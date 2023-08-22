@@ -4,20 +4,22 @@
 ###
 GET {{ventas}}
 ###
-POST {{productos}}
-Content-Type: application/json
 
-{
-    "nombre": "Quena",
-    "categoria": "Viento",
+##POST {{instrumentos}}
+##Content-Type: application/json
 
-}
-###
-POST {{ventas}}
-Content-Type: application/json
+##{
+    ## "nombre": "Quena",
+    ##"categoria": "Viento",
+    ##"descripcion": "Tubo de madera con orificios"
 
-{"nombre": "Otro Producto"}
+##}
 ###
-GET {{server}}/api/productos/1/productos
+##POST {{musicos}}
+##Content-Type: application/json
+
+##{"nombre": "Otro Musico"}
 ###
-GET {{server}}/api/ventas/1/ventas
+##GET {{server}}/api/integrantes/1/instrumento
+###
+##GET {{server}}/api/bandas/1/formacion
